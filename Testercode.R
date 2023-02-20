@@ -36,6 +36,13 @@ no_bc_cancer <- nrow(no_bc_cancer)
 bc_cancer <- bc_data %>% filter(combined_contraceptives > 0) %>% filter(Biopsy == 1)
 bc_cancer <- nrow(bc_cancer)
 
+# what is the difference between iud year and cancer vs pill years and cancer?
+iud_highest_years <- bc_data %>% filter(IUD..years. > 0) %>% filter(Biopsy == 1) %>% filter(IUD..years. == max(IUD..years.)) %>% pull(IUD..years.)
+
+pill_highest_years <-  bc_data %>% filter(Hormonal.Contraceptives..years. > 0) %>% filter(Biopsy == 1) %>% filter(Hormonal.Contraceptives..years. == max(Hormonal.Contraceptives..years.)) %>% pull(Hormonal.Contraceptives..years.)
+
+difference_iud_pill <- pill_highest_years - iud_highest_years
+
 #how does smoking, contraceptives, and biopsy connect?
 smoke_bc <- bc_data %>% filter(Smokes == 1) %>% filter(combined_contraceptives > 0) %>% filter(Biopsy == 1)
 smoke_bc <- nrow(smoke_bc)

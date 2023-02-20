@@ -43,7 +43,10 @@ Birth control is used for various reasons, such as preventing pregnancy, menstru
 
 - One research article, https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001182, they researched on how oral contraceptives affect the risk of cancer in female reproductive systems. This study was based on Black South African women who have taken injectable and oral contraceptives that have breast, cervical, ovarian, and endometrial cancer comparing those who have the types of cancer that have never taken birth control.
 
-- Another article, https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification, this study is based on the risk of cervical cancer. Result of cancer can likely come from genetics. Cervical cancer is unlikely to be found in women younger than age 20. The study explains that although women don’t develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future. As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don’t take oral contraceptives.
+- Another article, https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification, this study is based on the risk of cervical cancer. Result of cancer can likely come from genetics. 
+Cervical cancer is unlikely to be found in women younger than age 20. 
+The study explains that although women don’t develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future. 
+As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don’t take oral contraceptives.
 
 - This article, https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet#r5, explains the risk of oral contraceptives for cancer. When taking oral contraceptives for a long period of time about 5-10 years the risk of cervical cancer is higher, but women who take oral contraceptives have lower risk of endometrial and ovarian cancer.
 

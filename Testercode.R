@@ -1,7 +1,7 @@
 library("dplyr")
 library("ggplot2")
 
-bc_data <- read.csv("/Users/katemu/Desktop/exploratory-analysis-kmutzet/cervicalcancerdata.csv", stringsAsFactor = FALSE)
+bc_data <- read.csv("https://raw.githubusercontent.com/info-201a-wi23/exploratory-analysis-kmutzet/main/cervicalcancerdata.csv", stringsAsFactor = FALSE)
 
 num_columns <- ncol(bc_data)
 
@@ -9,7 +9,6 @@ num_columns <- ncol(bc_data)
 bc_data <- bc_data %>% mutate(combined_contraceptives = Hormonal.Contraceptives + IUD) 
 
 bc_data <- bc_data %>% mutate(combined_years = Hormonal.Contraceptives..years. + IUD..years.)  
-View(bc_data)
 #percentage of hormonal contraceptive users?
 hc <- bc_data$combined_contraceptives
 

@@ -24,6 +24,11 @@ youngest_time <- bc_data %>% filter(Hormonal.Contraceptives ==1) %>% filter(Age 
 
 oldest_time <- bc_data %>% filter(Hormonal.Contraceptives ==1) %>% filter(Age == max(Age)) %>% pull(Hormonal.Contraceptives..years.)
 
+#Add column hormonal Contraceptives and iud together and call it contraceptive
+bc_data <- bc_data %>% mutate(combined_contraceptives = Hormonal.Contraceptives + IUD) 
+
+bc_data <- bc_data %>% mutate(combined_years = Hormonal.Contraceptives..years. + IUD..years.)  
+
 # how many people have cancer that didnt take contraceptives? 
 no_bc_cancer <- bc_data %>% filter(combined_contraceptives == 0, na.rm = TRUE) %>% filter(Biopsy == 1) 
 no_bc_cancer <- nrow(no_bc_cancer)
@@ -35,11 +40,6 @@ bc_cancer <- nrow(bc_cancer)
 #how does smoking, contraceptives, and biopsy connect?
 smoke_bc <- bc_data %>% filter(Smokes == 1) %>% filter(combined_contraceptives > 0) %>% filter(Biopsy == 1)
 smoke_bc <- nrow(smoke_bc)
-
-#Add column hormonal Contraceptives and iud together and call it contraceptive
-bc_data <- bc_data %>% mutate(combined_contraceptives = Hormonal.Contraceptives + IUD) 
-
-bc_data <- bc_data %>% mutate(combined_years = Hormonal.Contraceptives..years. + IUD..years.)        
 
 #Plot graph with years of contraceptives (x) and cervical biopsy results
 ggplot(bc_data) + geom_line(aes(x = combined_years, y = Biopsy))

@@ -1,7 +1,7 @@
 library("dplyr")
 library("ggplot2")
 
-bc_data <- read.csv("/Users/tammynguyen/Desktop/Info201/exploratory-analysis-kmutzet/cervicalcancerdata.csv", stringsAsFactor = FALSE)
+bc_data <- read.csv("/Users/katemu/Desktop/exploratory-analysis-kmutzet/cervicalcancerdata.csv", stringsAsFactor = FALSE)
 
 num_columns <- ncol(bc_data)
 
@@ -9,7 +9,7 @@ num_columns <- ncol(bc_data)
 bc_data <- bc_data %>% mutate(combined_contraceptives = Hormonal.Contraceptives + IUD) 
 
 bc_data <- bc_data %>% mutate(combined_years = Hormonal.Contraceptives..years. + IUD..years.)  
-
+View(bc_data)
 #percentage of hormonal contraceptive users?
 hc <- bc_data$combined_contraceptives
 
@@ -20,14 +20,14 @@ under_thirty <- bc_data %>% group_by(Age, combined_contraceptives) %>% filter(Ag
 under_thirty_ratio <- paste0(round(nrow(under_thirty %>% filter(combined_contraceptives ==1)) / nrow(under_thirty) *100, 2), "%")
 
 #What is the youngest age of birth control use and what is oldest? 
-youngest_user <- bc_data %>% filter(combined_contraceptives ==1) %>% filter(Age == min(Age)) %>% pull(Age)
+youngest_user <- bc_data %>% filter(combined_contraceptives > 0) %>% filter(Age == min(Age)) %>% pull(Age)
 
-oldest_user <- bc_data %>% filter(combined_contraceptives ==1) %>% filter(Age == max(Age)) %>% pull(Age)
+oldest_user <- bc_data %>% filter(combined_contraceptives > 0) %>% filter(Age == max(Age)) %>% pull(Age)
 
 #How long have they been using it
-youngest_time <- bc_data %>% filter(combined_contraceptives ==1) %>% filter(Age == min(Age)) %>% pull(combined_contraceptives..years.)
+youngest_time <- bc_data %>% filter(combined_contraceptives > 0) %>% filter(Age == min(Age)) %>% pull(combined_years)
 
-oldest_time <- bc_data %>% filter(combined_contraceptives ==1) %>% filter(Age == max(Age)) %>% pull(combined_contraceptives..years.)
+oldest_time <- bc_data %>% filter(combined_contraceptives > 0) %>% filter(Age == max(Age)) %>% pull(combined_years)
 
 # how many people have cancer that didnt take contraceptives? 
 no_bc_cancer <- bc_data %>% filter(combined_contraceptives == 0, na.rm = TRUE) %>% filter(Biopsy == 1) 

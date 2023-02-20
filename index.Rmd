@@ -3,56 +3,106 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+## Final Project Proposal
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Contraceptive Options and Their Impact on Reproductive Health
+(Exploring Birth Control Usage, Risks and Benefits)
 
 ### Authors
 
-Names of your team members
+Tammy Nguyen tammyn3@uw.edu
 
-### Date
+Kate Muret kmuret@uw.edu
 
-Winter 2022
+Lara Tran ltran18@uw.edu
+
+Allen Zhang wenyuz8@uw.edu
+
+### February 20, 2023
+
+Winter Quarter
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+For this project we are going to explore birth control usage, risk and benefits. 
+We want to find out how different types of contraceptives used can affect an individual’s health. 
+Taking any type of medicine can result in different types of side effects and taking something like birth control there are major health risks. We are trying to learn how birth control can cause the risks of cancer and to what extent taking birth control can cause health complications. The study of our data set is focused on the study from Venezuela. 
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+side effects; risks; usage; hormones; types of contraceptives; cancer
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Birth control is used widely for a multitude of reasons. However, it is a very common experience for those that use birth control to have negative side effects. From this and our personal experiences with the subject we raise the question of how commonly it is exactly used in the U.S. and why is cancer the main health risk? What factors play into how birth control affects cancer? There are several types of birth control like oral pills and IUDs which may have more universal uses or downsides. This leads to asking how does birth control increase the risk of cancer? What do people primarily use it for and who are the oldest and youngest users? Many people assume birth control is strictly used for contraceptives, but there are also underlying uses. We are also comparing those that don’t take birth control, but still end up with cancer. By examining the reasons for its usage and the frequency of its usage, we aim to gain a deeper understanding of the reasons why individuals opt for birth control. We know, as well, that birth control is linked to an increased risk in certain types of cancers. We aim to explore the risks associated with birth control and the relationship it has to certain health complications and cancer. The goal is to provide a comprehensive overview of birth control and its impact on individuals. We are exploring with this research project how prevalent is this risk and if it’s worth it.
+
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Birth control is used for various reasons, such as preventing pregnancy, menstrual cramps, acne, and much more. But one of the main issues of birth control is the risk of developing cancer in the future. 
+
+- One research article, https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001182, they researched on how oral contraceptives affect the risk of cancer in female reproductive systems. This study was based on Black South African women who have taken injectable and oral contraceptives that have breast, cervical, ovarian, and endometrial cancer comparing those who have the types of cancer that have never taken birth control.
+
+- Another article, https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification, this study is based on the risk of cervical cancer. Result of cancer can likely come from genetics. Cervical cancer is unlikely to be found in women younger than age 20. The study explains that although women don’t develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future. As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don’t take oral contraceptives.
+
+- This article, https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet#r5, explains the risk of oral contraceptives for cancer. When taking oral contraceptives for a long period of time about 5-10 years the risk of cervical cancer is higher, but women who take oral contraceptives have lower risk of endometrial and ovarian cancer.
+
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
+Where did you find the data? 
+
+- https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification
+https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29
+
 Who collected the data?  
-How was the data collected or generated?  
+
+- Kelwin Fernandes (kafc at inesctec dot pt) - INESC TEC & FEUP, Porto, Portugal.
+- Jaime S. Cardoso - INESC TEC & FEUP, Porto, Portugal.
+- Jessica Fernandes - Universidad Central de Venezuela, Caracas, Venezuela.
+
+How was the data collected or generated? 
+
+- Dataset was obtained from the UCI Repository, and the dataset was collected at 'Hospital Universitario de Caracas' in Caracas, Venezuela
+
 Why was the data collected?  
+
+- Exploring Cervical Cancer Risk Factors for Biopsy Research, an area UCI tends to research. This file contains a list of risk factors leading to a biopsy examination for cervical cancer.
+
 How many observations (rows) are in your data?  
+
+- 858
+
 How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+
+- 7
+
+What, if any, ethical questions or questions of power do you need to consider when working with this data?
 What are possible limitations or problems with this data?   (at least 200 words)
+
+One limitation with this data collection is we are not sure how sensitive these tests are. 
+The answers are either numerical or yes/no (for biopsy results), though we do not know where the line is drawn for saying yes or no. 
+This may lead to the dataset being more generalized, as well as false positive and false negative test results. 
+It is also known that birth control may affect different bodies differently. We are not given that much background data (like the person’s ethnicity) 
+other than the patient’s age, which can raise questions related to the diversity of the data and how representative of the population it is. 
+If everyone is different then will this data be able to apply to certain individuals rather than everyone? It is not sure that this data was
+able to capture individual differences accurately and may not be representative of the population as a whole. We would have to consider why this data set is relevant to individuals. 
+It can also be questioned if this research will be better for individuals already taking birth control, planning to, or maybe neither. 
+Especially all of us being girls that have experienced birth control, there may be a bias reflected. This dataset serves as a precaution, 
+that could possibly weigh the pros and cons of birth control. It would have to be up to the consumer to decide.
+
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words) - The possible implications for this research is there is possibly a positive correlation between the birth control methods and the rate of getting related cancers. Also, there is a positive correlation between the application of several ways of birth control and the pregnancy numbers of individuals who used these methods in their previous life. Simply looking through the dataset we find, the relation between columns of three different birth control methods is obvious for the usage of these methods or not by presenting 0 or 1 values. It is clear that from the data set we find in the previous part, people who have used this method a larger number of times seem to have more pregnancies compared to those who do not use birth control methods. Only by guessing, with older ages and more times of this method applied to an individual, the chance of this person getting cervical cancer is increased as well. So, our implications should be to inform people cautiously using this method to prevent pregnancy, and to remind those technologists, designers, and policymakers that they should advise people carefully choosing these birth control methods until more suitable policies or harmless methods are found.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+The limitations and challenges partially discussed above, the boundary line of people who get involved in this test is not sensitive enough. The result of this data set is presented by numerical values 0 and 1 meaning “Yes” or “No”. This is a limitation that we don’t understand how one person can be defined as “Yes” for some columns in the data set. The boundary line is vague for us so the result that we find might not accurately represent the real-life situation. Also, there are “NA” values in the dataset that also somehow disrupt the trend of the real situation compared with the version we find after data cleaning and modeling. Moreover, the target of the dataset is not clear enough, it only mentions 858 women. But to be more specific, we need the race of these women and the country they’re coming from for a more accurate result. In this case, we can see which races are more likely to be detected to have cervical cancer as a result of birth control methods and which country has the most/least women getting infected with these diseases.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+
 
 ### Table
 
@@ -62,23 +112,16 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, code = readLines("chart1.R")}
 ```
+
 
 ### Chart 2
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+``````{r, echo = FALSE, code = readLines("chart2.R")}
+```
 
 ### Chart 3
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+``````{r, echo = FALSE, code = readLines("chart3.R")}
+```

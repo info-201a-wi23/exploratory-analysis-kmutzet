@@ -102,7 +102,7 @@ The limitations and challenges partially discussed above, the boundary line of p
 
 ### Summary Information
 
-
+From the calculation we did, we find that there are 37 people who have cancer taken the contraceptive therapy, and there are 15 people who have cancer do not take the therapy. The oldest people who get involved in birth control use has the age of 52 and with the birth control time of 3 years. The youngest people who use birth control therapies is only 14 years old with a birth control time of 0.08 years. Last but not least, there are 7 people who diagnosis with cancer have the habit of smoking.
 
 ### Table
 

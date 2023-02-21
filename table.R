@@ -1,4 +1,5 @@
-library("dplyr")
+library(dplyr)
+library(knitr)
 
 bc_data <- read.csv("./cervicalcancerdata.csv", stringsAsFactor = FALSE)
 bc_data <- bc_data %>%
@@ -23,4 +24,4 @@ table <- table %>%
     iud = sum(IUD, na.rm = TRUE),
     iud_years = sum(IUD..years., na.rm = TRUE),
     biopsy = sum(Biopsy, na.rm = TRUE))
-table
+kable(table)

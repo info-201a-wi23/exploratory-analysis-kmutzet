@@ -109,10 +109,9 @@ From the calculation we did, we find that there are 37 people who have cancer ta
 
 ### Table
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
-
+```{r table, echo = FALSE}
+kable(table)
+```
 ### Chart 1
 
 ``````{r, echo = FALSE, code = readLines("chart1.R")}

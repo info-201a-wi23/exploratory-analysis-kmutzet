@@ -1,5 +1,11 @@
 library("dplyr")
 
+bc_data <- read.csv("./cervicalcancerdata.csv", stringsAsFactor = FALSE)
+bc_data <- bc_data %>%
+  mutate(combined_contraceptives = Hormonal.Contraceptives + IUD) 
+bc_data <- bc_data %>%
+  mutate(combined_years = Hormonal.Contraceptives..years. + IUD..years.)  
+
 table <- bc_data
 table$Hormonal.Contraceptives..years. <- 
   round(table$Hormonal.Contraceptives..years.,2)
@@ -17,4 +23,4 @@ table <- table %>%
     iud = sum(IUD, na.rm = TRUE),
     iud_years = sum(IUD..years., na.rm = TRUE),
     biopsy = sum(Biopsy, na.rm = TRUE))
-
+table

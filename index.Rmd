@@ -143,10 +143,8 @@ The youngest people who use birth control therapies is only 14 years old with a 
 Last but not least, there are 7 people who diagnosis with cancer have the habit of smoking.
 
 ### Table
+``````{r, echo = FALSE, code = readLines("table.R")}```
 
-```{r table, echo = FALSE}
-kable(table)
-```
 ### Chart 1
 
 ``````{r, echo = FALSE, code = readLines("chart1.R")}```

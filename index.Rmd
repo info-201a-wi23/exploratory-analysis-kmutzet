@@ -43,7 +43,10 @@ Birth control is used for various reasons, such as preventing pregnancy, menstru
 
 - One research article, https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001182, they researched on how oral contraceptives affect the risk of cancer in female reproductive systems. This study was based on Black South African women who have taken injectable and oral contraceptives that have breast, cervical, ovarian, and endometrial cancer comparing those who have the types of cancer that have never taken birth control.
 
-- Another article, https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification, this study is based on the risk of cervical cancer. Result of cancer can likely come from genetics. Cervical cancer is unlikely to be found in women younger than age 20. The study explains that although women don’t develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future. As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don’t take oral contraceptives.
+- Another article, https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification, this study is based on the risk of cervical cancer. Result of cancer can likely come from genetics. 
+Cervical cancer is unlikely to be found in women younger than age 20. 
+The study explains that although women don’t develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future. 
+As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don’t take oral contraceptives.
 
 - This article, https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet#r5, explains the risk of oral contraceptives for cancer. When taking oral contraceptives for a long period of time about 5-10 years the risk of cervical cancer is higher, but women who take oral contraceptives have lower risk of endometrial and ovarian cancer.
 
@@ -94,7 +97,7 @@ that could possibly weigh the pros and cons of birth control. It would have to b
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words) - The possible implications for this research is there is possibly a positive correlation between the birth control methods and the rate of getting related cancers. Also, there is a positive correlation between the application of several ways of birth control and the pregnancy numbers of individuals who used these methods in their previous life. Simply looking through the dataset we find, the relation between columns of three different birth control methods is obvious for the usage of these methods or not by presenting 0 or 1 values. It is clear that from the data set we find in the previous part, people who have used this method a larger number of times seem to have more pregnancies compared to those who do not use birth control methods. Only by guessing, with older ages and more times of this method applied to an individual, the chance of this person getting cervical cancer is increased as well. So, our implications should be to inform people cautiously using this method to prevent pregnancy, and to remind those technologists, designers, and policymakers that they should advise people carefully choosing these birth control methods until more suitable policies or harmless methods are found.
+The possible implications for this research is there is possibly a positive correlation between the birth control methods and the rate of getting related cancers. Also, there is a positive correlation between the application of several ways of birth control and the pregnancy numbers of individuals who used these methods in their previous life. Simply looking through the dataset we find, the relation between columns of three different birth control methods is obvious for the usage of these methods or not by presenting 0 or 1 values. It is clear that from the data set we find in the previous part, people who have used this method a larger number of times seem to have more pregnancies compared to those who do not use birth control methods. Only by guessing, with older ages and more times of this method applied to an individual, the chance of this person getting cervical cancer is increased as well. So, our implications should be to inform people cautiously using this method to prevent pregnancy, and to remind those technologists, designers, and policymakers that they should advise people carefully choosing these birth control methods until more suitable policies or harmless methods are found.
 
 ### Limitations & Challenges
 
@@ -102,7 +105,7 @@ The limitations and challenges partially discussed above, the boundary line of p
 
 ### Summary Information
 
-
+From the calculation we did, we find that there are 37 people who have cancer taken the contraceptive therapy, and there are 15 people who have cancer do not take the therapy. The oldest people who get involved in birth control use has the age of 52 and with the birth control time of 3 years. The youngest people who use birth control therapies is only 14 years old with a birth control time of 0.08 years. Last but not least, there are 7 people who diagnosis with cancer have the habit of smoking.
 
 ### Table
 
@@ -115,13 +118,18 @@ Describe why you included the table and what information it reveals
 ``````{r, echo = FALSE, code = readLines("chart1.R")}
 ```
 
+The aim of this graph is to find a pattern of years of hormonal contraceptives for all the recorded person. We noticed that basically most of the people do not have taken hormonal contraceptives treatment and the longest time people who take the treatment is nearly 20 years.
 
 ### Chart 2
 
 ``````{r, echo = FALSE, code = readLines("chart2.R")}
 ```
 
+The purpose of this table is to find the relationship between the length of people who taking hormonal contraceptives and whether they smoke. It turns out that the pattern is widely spread out. People in variety of ages tends to have different patterns of smoking. But there are fewer people who taking hormonal contraceptives tends to smoke in their therapy.
+
 ### Chart 3
 
 ``````{r, echo = FALSE, code = readLines("chart3.R")}
 ```
+
+The purpose of this graph is to find a pattern whether people who take IUD tends to take Biopsy at the same time. The result shows that people from all ages have a trend that at the age of 40 takes most longest treatment of IUD. And the people who take less than 15 years of IUD would take Biopsy at the same time.

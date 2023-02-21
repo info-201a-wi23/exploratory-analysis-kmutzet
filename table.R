@@ -5,6 +5,7 @@ table$Hormonal.Contraceptives..years. <-
   round(table$Hormonal.Contraceptives..years.,2)
 table$combined_years <- 
   round(table$combined_years,2)
+table$IUD..years. <- round(table$IUD..years.,2)
 table <- table %>% mutate(age_by_decade = round((Age/10-0.5),0))
 table <- table %>%
   group_by(age_by_decade) %>% 

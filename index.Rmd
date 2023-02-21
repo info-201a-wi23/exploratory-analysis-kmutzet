@@ -1,22 +1,24 @@
 ---
 title: "Exploratory Analysis"
 output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ## Final Project Proposal
 
-Contraceptive Options and Their Impact on Reproductive Health
-(Exploring Birth Control Usage, Risks and Benefits)
+Contraceptive Options and Their Impact on Reproductive Health (Exploring Birth Control Usage, Risks and Benefits)
 
 ### Authors
 
-Tammy Nguyen tammyn3@uw.edu
+Tammy Nguyen [tammyn3\@uw.edu](mailto:tammyn3@uw.edu){.email}
 
-Kate Muret kmuret@uw.edu
+Kate Muret [kmuret\@uw.edu](mailto:kmuret@uw.edu){.email}
 
-Lara Tran ltran18@uw.edu
+Lara Tran [ltran18\@uw.edu](mailto:ltran18@uw.edu){.email}
 
-Allen Zhang wenyuz8@uw.edu
+Allen Zhang [wenyuz8\@uw.edu](mailto:wenyuz8@uw.edu){.email}
 
 ### February 20, 2023
 
@@ -24,88 +26,121 @@ Winter Quarter
 
 ### Abstract
 
-For this project we are going to explore birth control usage, risk and benefits. 
-We want to find out how different types of contraceptives used can affect an individual’s health. 
-Taking any type of medicine can result in different types of side effects and taking something like birth control there are major health risks. We are trying to learn how birth control can cause the risks of cancer and to what extent taking birth control can cause health complications. The study of our data set is focused on the study from Venezuela. 
+For this project we are going to explore birth control usage, risk and benefits.
+We want to find out how different types of contraceptives used can affect an individual's health.
+Taking any type of medicine can result in different types of side effects and taking something like birth control there are major health risks.
+We are trying to learn how birth control can cause the risks of cancer and to what extent taking birth control can cause health complications.
+The study of our data set is focused on the study from Venezuela.
 
 ### Keywords
 
 side effects; risks; usage; hormones; types of contraceptives; cancer
 
-### Introduction  
+### Introduction
 
-Birth control is used widely for a multitude of reasons. However, it is a very common experience for those that use birth control to have negative side effects. From this and our personal experiences with the subject we raise the question of how commonly it is exactly used in the U.S. and why is cancer the main health risk? What factors play into how birth control affects cancer? There are several types of birth control like oral pills and IUDs which may have more universal uses or downsides. This leads to asking how does birth control increase the risk of cancer? What do people primarily use it for and who are the oldest and youngest users? Many people assume birth control is strictly used for contraceptives, but there are also underlying uses. We are also comparing those that don’t take birth control, but still end up with cancer. By examining the reasons for its usage and the frequency of its usage, we aim to gain a deeper understanding of the reasons why individuals opt for birth control. We know, as well, that birth control is linked to an increased risk in certain types of cancers. We aim to explore the risks associated with birth control and the relationship it has to certain health complications and cancer. The goal is to provide a comprehensive overview of birth control and its impact on individuals. We are exploring with this research project how prevalent is this risk and if it’s worth it.
+Birth control is used widely for a multitude of reasons.
+However, it is a very common experience for those that use birth control to have negative side effects.
+From this and our personal experiences with the subject we raise the question of how commonly it is exactly used in the U.S. and why is cancer the main health risk?
+What factors play into how birth control affects cancer?
+There are several types of birth control like oral pills and IUDs which may have more universal uses or downsides.
+This leads to asking how does birth control increase the risk of cancer?
+What do people primarily use it for and who are the oldest and youngest users?
+Many people assume birth control is strictly used for contraceptives, but there are also underlying uses.
+We are also comparing those that don't take birth control, but still end up with cancer.
+By examining the reasons for its usage and the frequency of its usage, we aim to gain a deeper understanding of the reasons why individuals opt for birth control.
+We know, as well, that birth control is linked to an increased risk in certain types of cancers.
+We aim to explore the risks associated with birth control and the relationship it has to certain health complications and cancer.
+The goal is to provide a comprehensive overview of birth control and its impact on individuals.
+We are exploring with this research project how prevalent is this risk and if it's worth it.
 
+### Related Work
 
-### Related Work  
+Birth control is used for various reasons, such as preventing pregnancy, menstrual cramps, acne, and much more.
+But one of the main issues of birth control is the risk of developing cancer in the future.
 
-Birth control is used for various reasons, such as preventing pregnancy, menstrual cramps, acne, and much more. But one of the main issues of birth control is the risk of developing cancer in the future. 
+-   One research article, <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001182>, they researched on how oral contraceptives affect the risk of cancer in female reproductive systems.
+    This study was based on Black South African women who have taken injectable and oral contraceptives that have breast, cervical, ovarian, and endometrial cancer comparing those who have the types of cancer that have never taken birth control.
 
-- One research article, https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001182, they researched on how oral contraceptives affect the risk of cancer in female reproductive systems. This study was based on Black South African women who have taken injectable and oral contraceptives that have breast, cervical, ovarian, and endometrial cancer comparing those who have the types of cancer that have never taken birth control.
+-   Another article, <https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification>, this study is based on the risk of cervical cancer.
+    Result of cancer can likely come from genetics.
+    Cervical cancer is unlikely to be found in women younger than age 20.
+    The study explains that although women don't develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future.
+    As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don't take oral contraceptives.
 
-- Another article, https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification, this study is based on the risk of cervical cancer. Result of cancer can likely come from genetics. 
-Cervical cancer is unlikely to be found in women younger than age 20. 
-The study explains that although women don’t develop cervical cancer, they can become infected with multiple types of HPV (human papillomavirus), which then can increase their risk of getting cervical cancer in the future. 
-As women take oral contraceptives for more than 5 years the research shows that they have a higher chance of developing HPV than those that don’t take oral contraceptives.
-
-- This article, https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet#r5, explains the risk of oral contraceptives for cancer. When taking oral contraceptives for a long period of time about 5-10 years the risk of cervical cancer is higher, but women who take oral contraceptives have lower risk of endometrial and ovarian cancer.
-
+-   This article, <https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet#r5>, explains the risk of oral contraceptives for cancer.
+    When taking oral contraceptives for a long period of time about 5-10 years the risk of cervical cancer is higher, but women who take oral contraceptives have lower risk of endometrial and ovarian cancer.
 
 ### The Dataset
 
-Where did you find the data? 
+Where did you find the data?
 
-- https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification
-https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29
+-   <https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification> <https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29>
 
-Who collected the data?  
+Who collected the data?
 
-- Kelwin Fernandes (kafc at inesctec dot pt) - INESC TEC & FEUP, Porto, Portugal.
-- Jaime S. Cardoso - INESC TEC & FEUP, Porto, Portugal.
-- Jessica Fernandes - Universidad Central de Venezuela, Caracas, Venezuela.
+-   Kelwin Fernandes (kafc at inesctec dot pt) - INESC TEC & FEUP, Porto, Portugal.
+-   Jaime S. Cardoso - INESC TEC & FEUP, Porto, Portugal.
+-   Jessica Fernandes - Universidad Central de Venezuela, Caracas, Venezuela.
 
-How was the data collected or generated? 
+How was the data collected or generated?
 
-- Dataset was obtained from the UCI Repository, and the dataset was collected at 'Hospital Universitario de Caracas' in Caracas, Venezuela
+-   Dataset was obtained from the UCI Repository, and the dataset was collected at 'Hospital Universitario de Caracas' in Caracas, Venezuela
 
-Why was the data collected?  
+Why was the data collected?
 
-- Exploring Cervical Cancer Risk Factors for Biopsy Research, an area UCI tends to research. This file contains a list of risk factors leading to a biopsy examination for cervical cancer.
+-   Exploring Cervical Cancer Risk Factors for Biopsy Research, an area UCI tends to research. This file contains a list of risk factors leading to a biopsy examination for cervical cancer.
 
-How many observations (rows) are in your data?  
+How many observations (rows) are in your data?
 
-- 858
+-   858
 
-How many features (columns) are in the data?  
+How many features (columns) are in the data?
 
-- 7
+-   7
 
 What, if any, ethical questions or questions of power do you need to consider when working with this data?
-What are possible limitations or problems with this data?   (at least 200 words)
+What are possible limitations or problems with this data?
+(at least 200 words)
 
-One limitation with this data collection is we are not sure how sensitive these tests are. 
-The answers are either numerical or yes/no (for biopsy results), though we do not know where the line is drawn for saying yes or no. 
-This may lead to the dataset being more generalized, as well as false positive and false negative test results. 
-It is also known that birth control may affect different bodies differently. We are not given that much background data (like the person’s ethnicity) 
-other than the patient’s age, which can raise questions related to the diversity of the data and how representative of the population it is. 
-If everyone is different then will this data be able to apply to certain individuals rather than everyone? It is not sure that this data was
-able to capture individual differences accurately and may not be representative of the population as a whole. We would have to consider why this data set is relevant to individuals. 
-It can also be questioned if this research will be better for individuals already taking birth control, planning to, or maybe neither. 
-Especially all of us being girls that have experienced birth control, there may be a bias reflected. This dataset serves as a precaution, 
-that could possibly weigh the pros and cons of birth control. It would have to be up to the consumer to decide.
-
+One limitation with this data collection is we are not sure how sensitive these tests are.
+The answers are either numerical or yes/no (for biopsy results), though we do not know where the line is drawn for saying yes or no.
+This may lead to the dataset being more generalized, as well as false positive and false negative test results.
+It is also known that birth control may affect different bodies differently.
+We are not given that much background data (like the person's ethnicity) other than the patient's age, which can raise questions related to the diversity of the data and how representative of the population it is.
+If everyone is different then will this data be able to apply to certain individuals rather than everyone?
+It is not sure that this data was able to capture individual differences accurately and may not be representative of the population as a whole.
+We would have to consider why this data set is relevant to individuals.
+It can also be questioned if this research will be better for individuals already taking birth control, planning to, or maybe neither.
+Especially all of us being girls that have experienced birth control, there may be a bias reflected.
+This dataset serves as a precaution, that could possibly weigh the pros and cons of birth control.
+It would have to be up to the consumer to decide.
 
 ### Implications
 
-The possible implications for this research is there is possibly a positive correlation between the birth control methods and the rate of getting related cancers. Also, there is a positive correlation between the application of several ways of birth control and the pregnancy numbers of individuals who used these methods in their previous life. Simply looking through the dataset we find, the relation between columns of three different birth control methods is obvious for the usage of these methods or not by presenting 0 or 1 values. It is clear that from the data set we find in the previous part, people who have used this method a larger number of times seem to have more pregnancies compared to those who do not use birth control methods. Only by guessing, with older ages and more times of this method applied to an individual, the chance of this person getting cervical cancer is increased as well. So, our implications should be to inform people cautiously using this method to prevent pregnancy, and to remind those technologists, designers, and policymakers that they should advise people carefully choosing these birth control methods until more suitable policies or harmless methods are found.
+The possible implications for this research is there is possibly a positive correlation between the birth control methods and the rate of getting related cancers.
+Also, there is a positive correlation between the application of several ways of birth control and the pregnancy numbers of individuals who used these methods in their previous life.
+Simply looking through the dataset we find, the relation between columns of three different birth control methods is obvious for the usage of these methods or not by presenting 0 or 1 values.
+It is clear that from the data set we find in the previous part, people who have used this method a larger number of times seem to have more pregnancies compared to those who do not use birth control methods.
+Only by guessing, with older ages and more times of this method applied to an individual, the chance of this person getting cervical cancer is increased as well.
+So, our implications should be to inform people cautiously using this method to prevent pregnancy, and to remind those technologists, designers, and policymakers that they should advise people carefully choosing these birth control methods until more suitable policies or harmless methods are found.
 
 ### Limitations & Challenges
 
-The limitations and challenges partially discussed above, the boundary line of people who get involved in this test is not sensitive enough. The result of this data set is presented by numerical values 0 and 1 meaning “Yes” or “No”. This is a limitation that we don’t understand how one person can be defined as “Yes” for some columns in the data set. The boundary line is vague for us so the result that we find might not accurately represent the real-life situation. Also, there are “NA” values in the dataset that also somehow disrupt the trend of the real situation compared with the version we find after data cleaning and modeling. Moreover, the target of the dataset is not clear enough, it only mentions 858 women. But to be more specific, we need the race of these women and the country they’re coming from for a more accurate result. In this case, we can see which races are more likely to be detected to have cervical cancer as a result of birth control methods and which country has the most/least women getting infected with these diseases.
+The limitations and challenges partially discussed above, the boundary line of people who get involved in this test is not sensitive enough.
+The result of this data set is presented by numerical values 0 and 1 meaning "Yes" or "No".
+This is a limitation that we don't understand how one person can be defined as "Yes" for some columns in the data set.
+The boundary line is vague for us so the result that we find might not accurately represent the real-life situation.
+Also, there are "NA" values in the dataset that also somehow disrupt the trend of the real situation compared with the version we find after data cleaning and modeling.
+Moreover, the target of the dataset is not clear enough, it only mentions 858 women.
+But to be more specific, we need the race of these women and the country they're coming from for a more accurate result.
+In this case, we can see which races are more likely to be detected to have cervical cancer as a result of birth control methods and which country has the most/least women getting infected with these diseases.
 
 ### Summary Information
 
-From the calculation we did, we find that there are 37 people who have cancer taken the contraceptive therapy, and there are 15 people who have cancer do not take the therapy. The oldest people who get involved in birth control use has the age of 52 and with the birth control time of 3 years. The youngest people who use birth control therapies is only 14 years old with a birth control time of 0.08 years. Last but not least, there are 7 people who diagnosis with cancer have the habit of smoking.
+From the calculation we did, we find that there are 37 people who have cancer taken the contraceptive therapy, and there are 15 people who have cancer do not take the therapy.
+The oldest people who get involved in birth control use has the age of 52 and with the birth control time of 3 years.
+The youngest people who use birth control therapies is only 14 years old with a birth control time of 0.08 years.
+Last but not least, there are 7 people who diagnosis with cancer have the habit of smoking.
 
 ### Table
 
@@ -115,21 +150,24 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-``````{r, echo = FALSE, code = readLines("chart1.R")}
-```
+``````{r, echo = FALSE, code = readLines("chart1.R")}```
 
-The aim of this graph is to find a pattern of years of hormonal contraceptives for all the recorded person. We noticed that basically most of the people do not have taken hormonal contraceptives treatment and the longest time people who take the treatment is nearly 20 years.
+The aim of this graph is to find a pattern of years of hormonal contraceptives for all the recorded person.
+We noticed that basically most of the people do not have taken hormonal contraceptives treatment and the longest time people who take the treatment is nearly 20 years.
 
 ### Chart 2
 
-``````{r, echo = FALSE, code = readLines("chart2.R")}
-```
+``````{r, echo = FALSE, code = readLines("chart2.R")}```
 
-The purpose of this table is to find the relationship between the length of people who taking hormonal contraceptives and whether they smoke. It turns out that the pattern is widely spread out. People in variety of ages tends to have different patterns of smoking. But there are fewer people who taking hormonal contraceptives tends to smoke in their therapy.
+The purpose of this table is to find the relationship between the length of people who taking hormonal contraceptives and whether they smoke.
+It turns out that the pattern is widely spread out.
+People in variety of ages tends to have different patterns of smoking.
+But there are fewer people who taking hormonal contraceptives tends to smoke in their therapy.
 
 ### Chart 3
 
-``````{r, echo = FALSE, code = readLines("chart3.R")}
-```
+``````{r, echo = FALSE, code = readLines("chart3.R")}```
 
-The purpose of this graph is to find a pattern whether people who take IUD tends to take Biopsy at the same time. The result shows that people from all ages have a trend that at the age of 40 takes most longest treatment of IUD. And the people who take less than 15 years of IUD would take Biopsy at the same time.
+The purpose of this graph is to find a pattern whether people who take IUD tends to take Biopsy at the same time.
+The result shows that people from all ages have a trend that at the age of 40 takes most longest treatment of IUD.
+And the people who take less than 15 years of IUD would take Biopsy at the same time.

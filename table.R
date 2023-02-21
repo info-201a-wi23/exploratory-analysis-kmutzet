@@ -8,12 +8,14 @@ table$combined_years <-
 table <- table %>% mutate(age_by_decade = round((Age/10-0.5),0))
 table <- table %>%
   group_by(age_by_decade) %>% 
-  summarize(sum(Smokes), 
-            sum(Hormonal.Contraceptives), 
-            sum(Hormonal.Contraceptives..years.),
-            sum(IUD),
-            sum(IUD..years.),
-            sum(Biopsy))
+  summarize(sum(Smokes, na.rm = TRUE), 
+    sum(combined_contraceptives, na.rm = TRUE), 
+    sum(combined_years, na.rm = TRUE),
+    sum(Hormonal.Contraceptives, na.rm = TRUE), 
+    sum(Hormonal.Contraceptives..years., na.rm = TRUE),
+    sum(IUD, na.rm = TRUE),
+    sum(IUD..years., na.rm = TRUE),
+    sum(Biopsy), na.rm = TRUE)
 
 
 

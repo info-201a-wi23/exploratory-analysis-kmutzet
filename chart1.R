@@ -7,4 +7,3 @@ ggplot(bc_data) +
   geom_histogram(aes(x = Hormonal.Contraceptives..years.)) +
   labs(title = "Years of getting hormonal contraceptives",
        x = "Years of hormonal contraceptives")
-  

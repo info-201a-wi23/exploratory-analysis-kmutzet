@@ -11,3 +11,4 @@ ggplot(bc_data) +
        x = "Age",
        y = "Years of taking IUD",
        color = "Taking Biopsy or not")
+

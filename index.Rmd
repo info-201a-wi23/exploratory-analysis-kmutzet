@@ -144,19 +144,21 @@ Last but not least, there are 7 people who diagnosis with cancer have the habit 
 
 ### Table
 
-```{r table, echo = FALSE}
-kable(table)
+```{r table, echo = FALSE, code = readLines("table.R")}
 ```
+
 ### Chart 1
 
-``````{r, echo = FALSE, code = readLines("chart1.R")}```
+``````{r, echo = FALSE, code = readLines("chart1.R")}
+```
 
 The aim of this graph is to find a pattern of years of hormonal contraceptives for all the recorded person.
 We noticed that basically most of the people do not have taken hormonal contraceptives treatment and the longest time people who take the treatment is nearly 20 years.
 
 ### Chart 2
 
-``````{r, echo = FALSE, code = readLines("chart2.R")}```
+``````{r, echo = FALSE, code = readLines("chart2.R")}
+```
 
 The purpose of this table is to find the relationship between the length of people who taking hormonal contraceptives and whether they smoke.
 It turns out that the pattern is widely spread out.
@@ -165,7 +167,8 @@ But there are fewer people who taking hormonal contraceptives tends to smoke in 
 
 ### Chart 3
 
-``````{r, echo = FALSE, code = readLines("chart3.R")}```
+``````{r, echo = FALSE, code = readLines("chart3.R")}
+```
 
 The purpose of this graph is to find a pattern whether people who take IUD tends to take Biopsy at the same time.
 The result shows that people from all ages have a trend that at the age of 40 takes most longest treatment of IUD.
